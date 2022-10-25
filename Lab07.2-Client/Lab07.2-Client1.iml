@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Lab01.3_Solution" />
+    <orderEntry type="module" module-name="Lab10.11" />
+    <orderEntry type="module" module-name="Lab06.1_Solution3" />
+    <orderEntry type="module" module-name="Lab12.1" />
+    <orderEntry type="module" module-name="Lab07.1_Solution" />
+    <orderEntry type="module" module-name="Lab12.1_Solution1" />
+    <orderEntry type="module" module-name="Lab06.1" />
+    <orderEntry type="module" module-name="Lab08.11" />
+    <orderEntry type="module" module-name="Lab01.5" />
+    <orderEntry type="module" module-name="Lab08.1_Solution3" />
+    <orderEntry type="module" module-name="Lab04.1_Solution2" />
+    <orderEntry type="module" module-name="Lab01.4_Solution" />
+    <orderEntry type="module" module-name="Lab03.3_Solution" />
+    <orderEntry type="module" module-name="MiniLab01.21" />
+    <orderEntry type="module" module-name="Lab07.11" />
+    <orderEntry type="module" module-name="Lab12.12" />
+    <orderEntry type="module" module-name="Lab01.21" />
+    <orderEntry type="module" module-name="Lab01.2" />
+    <orderEntry type="module" module-name="Lab06.11" />
+    <orderEntry type="module" module-name="Lab10.1_Solution3" />
+    <orderEntry type="module" module-name="Lab01.5_Solution" />
+    <orderEntry type="module" module-name="Lab02.3" />
+    <orderEntry type="module" module-name="Lab02.3_Solution" />
+    <orderEntry type="module" module-name="Lab07.1_Solution3" />
+    <orderEntry type="module" module-name="Lab07.1_Solution1" />
+    <orderEntry type="module" module-name="Lab08.1_Solution" />
+    <orderEntry type="module" module-name="Lab07.1" />
+    <orderEntry type="module" module-name="Lab04.1" />
+    <orderEntry type="module" module-name="Lab01.51" />
+    <orderEntry type="module" module-name="Lab04.11" />
+    <orderEntry type="module" module-name="Lab03.31" />
+    <orderEntry type="module" module-name="Lab08.13" />
+    <orderEntry type="module" module-name="Lab01.2_Solution" />
+    <orderEntry type="module" module-name="Lab08.1_Solution1" />
+    <orderEntry type="module" module-name="Lab07.1_Solution2" />
+    <orderEntry type="module" module-name="Lab07.2" />
+    <orderEntry type="module" module-name="Lab07.23" />
+    <orderEntry type="module" module-name="Lab01.6_Solution_Optional" />
+    <orderEntry type="module" module-name="Lab01.6_Solution" />
+    <orderEntry type="module" module-name="MiniLab01.2" />
+    <orderEntry type="module" module-name="Lab02.31" />
+    <orderEntry type="module" module-name="Lab12.2_Solution3" />
+    <orderEntry type="module" module-name="Lab10.13" />
+    <orderEntry type="module" module-name="Lab03.3" />
+  </component>
+</module>
