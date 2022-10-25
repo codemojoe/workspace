@@ -13,6 +13,11 @@ public class SalariedEmployee extends Employee{
         setSalary(salary);
     }
 
+    @Override
+    public void pay() {
+        System.out.println(getName() + " is paid salary " + getSalary());
+    }
+
     public double getSalary() {
         return salary;
     }

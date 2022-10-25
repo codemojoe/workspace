@@ -40,6 +40,12 @@ public class Department {
         this.employees = employees;
     }
 
+    public void payEmployees() {
+        for (int i = 0; i < currentIndex; i++) {
+            employees[i].pay();
+        }
+    }
+
     // business methods
     public void listEmployees() {
         // Note: we don't use for-each here because we only want to access the array where employees were added.
