@@ -6,9 +6,6 @@ public class HourlyEmployee extends Employee {
     private double rate;
     private double hours;
 
-    public HourlyEmployee() {
-    }
-
     public HourlyEmployee(String name, LocalDate hireDate, double rate, double hours) {
         super(name, hireDate);
         setRate(rate);
@@ -38,9 +35,7 @@ public class HourlyEmployee extends Employee {
 
     @Override
     public String toString() {
-        return "HourlyEmployee{" +
-                "name=" + getName() +
-                ", date hired=" + getHireDate() +
+        return super.toString() +
                 ", rate=" + rate +
                 ", hours=" + hours +
                 '}';

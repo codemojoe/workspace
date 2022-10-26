@@ -31,9 +31,6 @@ public class Department {
     private int currentIndex = 0;  // for dealing with the array
 
     // constructors
-    public Department() {
-    }
-
     public Department(String name, String location, Employee[] employees) {
         setName(name);
         setLocation(location);

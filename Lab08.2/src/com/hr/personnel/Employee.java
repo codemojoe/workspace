@@ -35,10 +35,12 @@ public abstract class Employee {
         setHireDate(hireDate);
     }
 
+
     // business methods
     public void work() {
         System.out.println(getName() + " working hard since " + getHireDate());
     }
+
     public abstract void pay();
 //    {
 //        System.out.println(getName() + " is paid somehow");

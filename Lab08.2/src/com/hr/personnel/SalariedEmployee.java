@@ -1,12 +1,10 @@
 package com.hr.personnel;
 
+import javax.swing.*;
 import java.time.LocalDate;
 
 public class SalariedEmployee extends Employee{
     private double salary;
-
-    public SalariedEmployee() {
-    }
 
     public SalariedEmployee(String name, LocalDate hireDate, double salary) {
         super(name, hireDate);
@@ -28,9 +26,7 @@ public class SalariedEmployee extends Employee{
 
     @Override
     public String toString() {
-        return "SalariedEmployee{" +
-                "name=" + getName() +
-                ", date hired=" + getHireDate() +
+        return super.toString() +
                 ", salary=" + salary +
                 '}';
     }
