@@ -2,10 +2,14 @@ public abstract class Animal {
     private String name;
 
     public Animal(String name) {
-        this.name = name;
+        setName(name);
     }
 
     public abstract void breathe();
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;
@@ -13,11 +17,8 @@ public abstract class Animal {
 }
 
 class Cat extends Animal {
-    private String name;
-
     public Cat(String name) {
         super(name);
-        this.name = name;
     }
 
     @Override
@@ -27,7 +28,6 @@ class Cat extends Animal {
 }
 
 class Dog extends Animal {
-
     public Dog(String name) {
         super(name);
     }
@@ -67,7 +67,6 @@ class AnimalHospital {
 
 
 class AnimalHospitalClient {
-
     private static Animal[] animals = new Animal[100];
     private static int currentIndex = 0;
 
