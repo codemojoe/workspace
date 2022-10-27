@@ -1,6 +1,7 @@
 package com.music.Guitar;
 
 import com.music.GuitarType.GuitarType;
+import com.music.test.GuitarValidationTest.IllegalGuitarException;
 
 public class Guitar {
     public static final int MIN_STRINGS = 6;
@@ -23,7 +24,7 @@ public class Guitar {
         setBrand(brand);
     }
 
-    public Guitar(String brand, int strings, int length, GuitarType type) {
+    public Guitar(String brand, int strings, int length, GuitarType type) throws IllegalGuitarException{
         this(brand);
         setStrings(strings);
         setLength(length);
@@ -72,9 +73,9 @@ public class Guitar {
         return brand;
     }
 
-    public void setStrings(int strings) {
+    public void setStrings(int strings) throws IllegalGuitarException {
         if (strings < MIN_STRINGS || strings > MAX_STRINGS) {
-            System.out.println("Invalid input. Strings must be between 6-12");
+            throw new IllegalGuitarException("Invalid input. Strings must be between 6-12");
         } else {
             this.strings = strings;
         }
@@ -84,9 +85,9 @@ public class Guitar {
         return strings;
     }
 
-    public void setLength(int length) {
+    public void setLength(int length) throws IllegalGuitarException {
         if (length < MIN_LENGTH || length > MAX_LENGTH) {
-            System.out.println("Invalid input. Length must be between 36-42");
+            throw new IllegalGuitarException("Invalid input. Length must be between 36-42");
         } else {
             this.length = length;
         }

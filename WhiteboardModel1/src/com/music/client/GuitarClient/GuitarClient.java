@@ -2,9 +2,10 @@ package com.music.client.GuitarClient;
 
 import com.music.Guitar.Guitar;
 import com.music.GuitarType.GuitarType;
+import com.music.test.GuitarValidationTest.IllegalGuitarException;
 
 public class GuitarClient {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalGuitarException {
 
         Guitar guitar = new Guitar();
         Guitar guitar1 = new Guitar("Fender");
