@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Lab11-ClassNotes" />
+        <module name="Lab11.1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Lab11-ClassNotes" target="11" />
+      <module name="Lab11.1" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

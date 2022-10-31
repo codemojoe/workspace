@@ -6,13 +6,12 @@
  * Copyright LearningPatterns Inc.
  */
 
-package com.hr.personnel.client;
+package client;
 
-import com.hr.personnel.Department;
-import com.hr.personnel.Employee;
-import com.hr.personnel.HourlyEmployee;
-import com.hr.personnel.SalariedEmployee;
-import gov.irs.IllegalWageException;
+import personnel.Department;
+import personnel.Employee;
+import personnel.HourlyEmployee;
+import personnel.SalariedEmployee;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -29,17 +28,11 @@ class HRClient {
         Department dept = new Department("Sales", "Seattle", employees);
         System.out.println(dept);
 
-        try {
-            // add Employees to it
-            dept.addEmployee(new SalariedEmployee("Jason", LocalDate.of(1990, 8, 24), 2250.0));
-            dept.addEmployee(new HourlyEmployee("Julie", LocalDate.of(2000, 2, 2), 3.0, 30.0));
-            dept.addEmployee(new SalariedEmployee("Amilia", LocalDate.of(1999, 2, 6), 1250.0));
-            dept.addEmployee(new HourlyEmployee("Logan", LocalDate.of(2002, 6, 2), 40.0, 40.0));
-        }
-
-        catch (IllegalWageException e) {
-            System.out.println("  ERROR: " + e);
-        }
+        // add Employees to it
+        dept.addEmployee(new SalariedEmployee("Jason", LocalDate.of(1990, 8, 24), 100000));
+        dept.addEmployee(new HourlyEmployee("Julie", LocalDate.of(2000, 2, 2), 53,40));
+        dept.addEmployee(new SalariedEmployee("Joe", LocalDate.of(2022, 10, 10), 200000.0));
+        dept.addEmployee(new HourlyEmployee("Chris", LocalDate.of(2022, 10, 10), 40, 40));
 
         // list its Employees
         System.out.println("\nList employees:");
@@ -49,8 +42,8 @@ class HRClient {
         System.out.println("\nMake employees work:");
         dept.workEmployees();
 
-        // pay its Employees
-        System.out.println("\nPay all employees:");
+        //
+        System.out.println("\nPay employees:");
         dept.payEmployees();
     }
 }

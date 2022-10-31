@@ -6,13 +6,9 @@
  * Copyright LearningPatterns Inc.
  */
 
-package com.hr.personnel.client;
+package com.hr.personnel.collections;
 
-import com.hr.personnel.Department;
-import com.hr.personnel.Employee;
-import com.hr.personnel.HourlyEmployee;
-import com.hr.personnel.SalariedEmployee;
-import gov.irs.IllegalWageException;
+import com.hr.personnel.collections.Department;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

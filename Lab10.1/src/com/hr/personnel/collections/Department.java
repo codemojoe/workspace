@@ -1,4 +1,4 @@
-/*
+package com.hr.personnel.collections;/*
  * This code is sample code, provided as-is, and we make no
  * warranties as to its correctness or suitability for any purpose.
  *
@@ -6,7 +6,7 @@
  * Copyright LearningPatterns Inc.
  */
 
-package com.hr.personnel;
+import com.hr.personnel.collections.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,15 +30,21 @@ public class Department {
     private String name;
     private String location;
     static private List<Employee> employees = new ArrayList<>();
+    //private Employee[] employees;
+    //private Employee[] employees = new Employee[100];
+    //private int currentIndex = 0;  // for dealing with the array
 
     // constructors
-    public Department() {
-    }
-
     public Department(String name, String location, List<Employee> employees) {
         setName(name);
         setLocation(location);
         this.employees = employees;
+    }
+
+    public void payEmployees() {
+        for (Employee employee : employees) {
+            employee.pay();
+        }
     }
 
     // business methods
@@ -53,12 +59,6 @@ public class Department {
     public void workEmployees() {
         for (Employee employee : employees) {
             employee.work();
-        }
-    }
-
-    public void payEmployees() {
-        for (Employee employee : employees) {
-            employee.pay();
         }
     }
 
