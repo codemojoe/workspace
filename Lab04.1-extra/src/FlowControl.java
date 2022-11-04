@@ -1,4 +1,9 @@
 public class FlowControl {
+    
+    //I am Joe's collaborating developer
+    //Please resolve this merge conflict issue
+    //Thanks!
+    
     public static boolean isItEvenNumber(int number) {
         return (number % 2 == 0);
     }
