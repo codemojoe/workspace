@@ -58,14 +58,19 @@ public class PoemClient {
      * Use a try-with-resources to initialize the stream and auto-close it.
      */
     private static void writePoem() throws IOException {
+        PrintWriter writer = null;
         // TODO
-        try (PrintWriter writer = new PrintWriter( new BufferedWriter(new FileWriter("Lab12.1/haiku.txt")))) {
-            writer.println("Here we go again.");
-            writer.println("Good things are coming our way.");
-            writer.println("Worry is for fools.");
+        try  {
+            writer = new PrintWriter( new BufferedWriter(new FileWriter("Lab12.1/haiku.txt")));
+            writer.println("Here's to our health.");
+            writer.println("May we live full of vigor.");
+            writer.println("Here's to our health.");
+            writer.close();
 
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            writer.close();
         }
     }
 }
